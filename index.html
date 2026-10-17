@@ -2,98 +2,114 @@
 <html lang="so">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Maxamed | Mobile App Portfolio</title>
-  <!-- FontAwesome Icons -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maxamed | Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- App Main Frame -->
-  <div class="app-container">
-    
-    <!-- Top Bar / Header -->
-    <header class="app-header">
-      <div class="user-badge">
-        <div class="avatar">M</div>
-        <div>
-          <h3>Maxamed</h3>
-          <span class="status">Mobile Repair & Dev</span>
-        </div>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Maxamed<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="avatar-box">
+        <i class="fa-solid fa-user-graduate"></i>
       </div>
-      <button class="icon-btn" id="themeToggle"><i class="fa-solid fa-moon"></i></button>
-    </header>
+      <h1>Kuso Dhawoow, Waxaan Ahay <span>Maxamed</span></h1>
+      <p class="tagline">Mobile Repair Technician & Aspiring Software Engineer</p>
+      <p class="description">
+        Waxaan ahay arday dhowaan dhameeyay Dugsiga Sare. Hada waxaan ku shaqeeyaa xirfada Mobile Repairing, waxaana hiigsanayaa inaan noqdo Software Engineer.
+      </p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn primary-btn">Ila Soo Xiriir</a>
+        <a href="#skills" class="btn secondary-btn">Xirfadahayga</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- App Content Area -->
-    <main class="app-content">
+  <section id="about" class="about">
+    <h2>Noloshayda & Waxbarashada</h2>
+    <div class="about-card">
+      <div class="info-item">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h3>Dugsi Sare</h3>
+        <p>Waxaan si guul leh u dhameeyay Dugsiga Sare, waxaana u diyaar garoobayaa heerka jaamacadda.</p>
+      </div>
+      <div class="info-item">
+        <i class="fa-solid fa-wrench"></i>
+        <h3>Mobile Repairing</h3>
+        <p>Waxaan leeyahay xirfad shaqo oo ku saabsan hagaajinta & cilad-bixinta taleefannada gacanta.</p>
+      </div>
+      <div class="info-item">
+        <i class="fa-solid fa-code"></i>
+        <h3>Software Engineering</h3>
+        <p>Hadafkayga ugu weyn waa inaan barto habaynta iyo samaynta software-ka & apps-ka.</p>
+      </div>
+    </div>
+  </section>
 
-      <!-- SECTION 1: HOME -->
-      <section id="home" class="tab-content active">
-        <div class="hero-card">
-          <i class="fa-solid fa-mobile-retro hero-icon"></i>
-          <h2>Ku Soo Dhawoow App-kayga!</h2>
-          <p>Waxaan ahay <b>Maxamed</b>, farsamoyaqaan hagaajiya taleefannada oo mustaqbalka hiigsanaya inuu noqdo <b>Software Engineer</b>.</p>
-          <div class="badge-group">
-            <span class="badge"><i class="fa-solid fa-screwdriver-wrench"></i> Hardware Repair</span>
-            <span class="badge"><i class="fa-solid fa-code"></i> Coding Beginner</span>
-          </div>
-        </div>
+  <section id="skills" class="skills">
+    <h2>Xirfadahayga (Skills)</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fa-solid fa-mobile-screen-button"></i>
+        <h3>Hardware Repair</h3>
+        <p>Hagaajinta shaashadaha, batariyada, iyo qaybaha sare ee taleefannada.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-solid fa-microchip"></i>
+        <h3>Software & Flashing</h3>
+        <p>Cilad-bixinta software-ka taleefannada iyo ku shubista OS-ka.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fa-solid fa-code"></i>
+        <h3>Web Basics</h3>
+        <p>Barashada HTML, CSS, iyo aasaaska koodhka lagu dhiso websaytyada.</p>
+      </div>
+    </div>
+  </section>
 
-        <div class="stats-grid">
-          <div class="stat-card">
-            <h4>100+</h4>
-            <p>Taleefan oo la hagaajiyay</p>
-          </div>
-          <div class="stat-card">
-            <h4>Dugsi Sare</h4>
-            <p>Dhamaystay</p>
-          </div>
-        </div>
-      </section>
+  <section id="goals" class="goals">
+    <h2>Hadafkayga Mustaqbalka</h2>
+    <div class="goals-container">
+      <p>
+        Sida arday dhameeyay Dugsiga Sare, waxaan hiigsanayaa inaan jaamacadda ka barto Software Engineering. Waxaan rabaa inaan xirfadayda Hardware-ka iyo Software-ka isku daro.
+      </p>
+    </div>
+  </section>
 
-      <!-- SECTION 2: SERVICES -->
-      <section id="services" class="tab-content">
-        <h3 class="section-title">Adeegyada Aan Bixiyo</h3>
-        
-        <div class="service-card">
-          <div class="service-icon"><i class="fa-solid fa-wrench"></i></div>
-          <div class="service-info">
-            <h4>Hardware Repairing</h4>
-            <p>Bedelida shaashadaha, batariyada, iyo cilladaha gudaha ee pcb-ga.</p>
-          </div>
-        </div>
+  <section id="contact" class="contact">
+    <h2>Ila Soo Xiriir</h2>
+    <form id="contactForm">
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Magacaaga" required>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Email-kaaga" required>
+      </div>
+      <div class="form-group">
+        <textarea id="message" rows="5" placeholder="Fariintaada..." required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Dir Fariinta</button>
+    </form>
+  </section>
 
-        <div class="service-card">
-          <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
-          <div class="service-info">
-            <h4>Software & Flashing</h4>
-            <p>Furida iCloud/Pattern, shubista OS-ka cusub iyo cilad-bixinta software-ka.</p>
-          </div>
-        </div>
+  <footer>
+    <p>&copy; 2026 Maxamed. All rights reserved.</p>
+  </footer>
 
-        <div class="service-card">
-          <div class="service-icon"><i class="fa-solid fa-mobile-screen"></i></div>
-          <div class="service-info">
-            <h4>App & Web Development</h4>
-            <p>Barashada iyo dhisida barnaamijyada moobaylka iyo websaytyada.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- SECTION 3: SKILLS -->
-      <section id="skills" class="tab-content">
-        <h3 class="section-title">Xirfadahayga</h3>
-        
-        <div class="skill-progress">
-          <div class="skill-label"><span>Mobile Hardware Repair</span> <span>90%</span></div>
-          <div class="progress-bar"><div class="fill" style="width: 90%;"></div></div>
-        </div>
-
-        <div class="skill-progress">
-          <div class="skill-label"><span>Mobile Software Flashing</span> <span>85%</span></div>
-          <div class="progress-bar"><div class="fill" style="width: 85%;"></div></div>
-        </div>
-
-        <div class="skill-progress">
-          <div class="skill-label"><span>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -6,24 +6,24 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-html, body {
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
+body {
+  background-color: #f8fafc;
   color: #0f172a;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* App Main Frame (Full Native Mobile View) */
 .app-container {
   width: 100%;
-  height: 100vh;
+  max-width: 500px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   background-color: #f8fafc;
+  padding-bottom: 90px;
 }
 
-/* Header */
 .app-header {
   display: flex;
   justify-content: space-between;
@@ -31,6 +31,9 @@ html, body {
   padding: 16px 20px;
   background-color: #ffffff;
   border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .user-badge {
@@ -71,12 +74,8 @@ html, body {
   cursor: pointer;
 }
 
-/* Content Area */
 .app-content {
-  flex: 1;
-  overflow-y: auto;
   padding: 20px;
-  padding-bottom: 90px;
 }
 
 .tab-content {
@@ -93,7 +92,6 @@ html, body {
   margin-bottom: 16px;
 }
 
-/* Hero Card */
 .hero-card {
   background: linear-gradient(135deg, #2563eb, #1d4ed8);
   color: white;
@@ -133,7 +131,6 @@ html, body {
   font-size: 11px;
 }
 
-/* Stats */
 .stats-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -158,7 +155,6 @@ html, body {
   color: #64748b;
 }
 
-/* Service Cards */
 .service-card {
   background: white;
   padding: 16px;
@@ -192,7 +188,6 @@ html, body {
   color: #64748b;
 }
 
-/* Skills */
 .skill-progress {
   margin-bottom: 16px;
 }
@@ -218,7 +213,6 @@ html, body {
   border-radius: 4px;
 }
 
-/* Form */
 .input-field {
   background: white;
   border: 1px solid #e2e8f0;
@@ -252,7 +246,6 @@ html, body {
   cursor: pointer;
 }
 
-/* Bottom Navigation Bar */
 .app-nav {
   position: fixed;
   bottom: 0;
@@ -263,7 +256,8 @@ html, body {
   background: #ffffff;
   padding: 12px 0 20px 0;
   border-top: 1px solid #e2e8f0;
-  z-index: 100;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
 }
 
 .nav-item {
@@ -286,3 +280,4 @@ html, body {
 .nav-item.active {
   color: #2563eb;
 }
+  
